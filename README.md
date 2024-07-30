@@ -4,7 +4,7 @@ Welcome to my portfolio website! This site serves as a showcase of my work, skil
 
 ## 🌐 Live Site
 
-Explore the live version of my portfolio: [Divyansh Goyal Portfolio](portfolioofdivyansh.netlify.app)
+Explore the live version of my portfolio: [Divyansh Goyal Portfolio](https://portfolioofdivyansh.netlify.app/)
 
 ## 🛠️ Languages
 
