@@ -136,7 +136,7 @@ nav {
     height: 100vh;
     width: 35vw;
     display: flex;
-    margin-right: 30px;
+    margin-right: 70px;
     justify-content: end;
     align-items: center;
 }
@@ -146,8 +146,8 @@ nav {
 }
 
 .intro-img img {
-    width: 30rem;
-    height: auto;
+    width: auto;
+    height: 80vh;
 }
 
 .intro-links {
@@ -975,13 +975,14 @@ footer {
     }
 
     .intro-img {
+        margin-top: 100px;
         width: 100vw;
         height: 0vh;
         justify-content: center;
     }
 
     .intro-img img {
-        width: 35rem;
+        height: 50vh;
     }
 
     .about-heading {
@@ -1112,11 +1113,11 @@ footer {
 
     .intro-img {
         width: 100%;
-        margin-top: 70px;
+        margin-top: 125px;
     }
 
     .intro-img img {
-        width: 22rem;
+        height: 50vh;
     }
 
     .about-heading,
