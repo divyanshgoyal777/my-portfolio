@@ -12,6 +12,7 @@
     <meta name="keywords"
         content="web development, programming, HTML, CSS, Tailwind, JavaScript, Nodejs, Expressjs, Reactjs, C">
     <meta name="author" content="Divyansh Goyal">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -25,6 +26,7 @@
 </head>
 
 <body>
+    <div id="tsparticles"></div>
     <div id="hamburger">
         <i class="fa-solid fa-bars"></i>
     </div>
@@ -49,7 +51,9 @@
             <div class="intro">
                 <p class="animate__animated animate__bounceInLeft  animate__slow">Hi, My name is <span
                         id="name-intro">Divyansh Goyal</span>.</p>
-                <p class="animate__animated animate__bounceInRight  animate__slow">I am a <span id="element"></span></p>
+                <p class="animate__animated animate__bounceInRight animate__slow">
+                    I am a <span id="element" style="font-weight: bold;"></span>
+                </p>
                 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
                 <ul class="intro-links">
                     <li class="animate__swing animate__slow animate__animated"><a target="_blank"
@@ -119,13 +123,17 @@
             <div class="project">
                 <div class="project-details animated-element">
                     <h2>WriteNest</h2>
-                    <p>WriteNest is a modern, feature-rich blogging platform built on the MERN stack (MongoDB, Express.js, React.js, Node.js).
-                    Designed for simplicity and elegance, WriteNest allows users to write, edit, and publish their blogs with ease. It
-                    boasts a sleek, responsive interface styled with Tailwind CSS, offering an enjoyable experience for both writers and
-                    readers.</p>
+                    <p>WriteNest is a modern, feature-rich blogging platform built on the MERN stack (MongoDB,
+                        Express.js, React.js, Node.js).
+                        Designed for simplicity and elegance, WriteNest allows users to write, edit, and publish their
+                        blogs with ease. It
+                        boasts a sleek, responsive interface styled with Tailwind CSS, offering an enjoyable experience
+                        for both writers and
+                        readers.</p>
                 </div>
                 <div class="card animated-element" onclick="rotateCard(this)">
-                    <div class="card-face card-front"><img class="click" width="100px" src="/gif/click.gif" alt="Click Me">(WriteNest)
+                    <div class="card-face card-front"><img class="click" width="100px" src="/gif/click.gif"
+                            alt="Click Me">(WriteNest)
                     </div>
                     <div class="card-face card-back">
                         <iframe src="https://writenest.netlify.app/" title="YouTube video player" frameborder="0"
@@ -136,8 +144,9 @@
                             <a title="Github" target="_blank" class="card-link"
                                 href="https://github.com/divyanshgoyal777/WriteNest"><img width="40"
                                     src="/svg/github.svg" alt="Github"></a>
-                            <a title="Open in New Tab" class="card-link" target="_blank" href="https://writenest.netlify.app/"><img
-                                    width="40px" src="/svg/open.svg" alt="Open"></a>
+                            <a title="Open in New Tab" class="card-link" target="_blank"
+                                href="https://writenest.netlify.app/"><img width="40px" src="/svg/open.svg"
+                                    alt="Open"></a>
                         </button>
                     </div>
                 </div>
@@ -207,7 +216,8 @@
                         events, and resources.</p>
                 </div>
                 <div class="card animated-element" onclick="rotateCard(this)">
-                    <div class="card-face card-front"><img class="click" width="100px" src="/gif/click.gif" alt="Click Me">(Guru
+                    <div class="card-face card-front"><img class="click" width="100px" src="/gif/click.gif"
+                            alt="Click Me">(Guru
                         Nanak Dev Campus)</div>
                     <div class="card-face card-back">
                         <iframe src="https://gurunanakdev.netlify.app/" title="YouTube video player" frameborder="0"
@@ -219,7 +229,8 @@
                                 href="https://github.com/divyanshgoyal777/Guru-Nanak-Dev-DSEU-Clone"><img width="40"
                                     src="/svg/github.svg" alt="Github"></a>
                             <a title="Open in New Tab" target="_blank" class="card-link"
-                                href="https://gurunanakdev.netlify.app/"><img width="40px" src="/svg/open.svg" alt="Open"></a>
+                                href="https://gurunanakdev.netlify.app/"><img width="40px" src="/svg/open.svg"
+                                    alt="Open"></a>
                         </button>
                     </div>
                 </div>

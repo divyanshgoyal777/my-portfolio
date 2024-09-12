@@ -1,16 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
+  var colors = ["rgb(247, 92, 169)", "yellow", "red", "orange"];
+  var currentColorIndex = 0;
+
   var typed = new Typed("#element", {
     strings: [
-      "<b>Web Developer.</b>",
-      "<b>Programmer.</b>",
-      "<b>Canva Designer.</b>",
-      "<b>Video Editor.</b>",
+      "Web Developer.",
+      "Programmer.",
+      "Canva Designer.",
+      "Video Editor.",
     ],
-    typeSpeed: 40,
-    backSpeed: 30,
+    typeSpeed: 45,
+    backSpeed: 40,
     backDelay: 1000,
     startDelay: 400,
     loop: true,
+    preStringTyped: function () {
+      document.getElementById("element").style.color =
+        colors[currentColorIndex];
+      currentColorIndex = (currentColorIndex + 1) % colors.length;
+    },
   });
 
   let navLinks = document.querySelectorAll(".elements li a");
@@ -218,3 +226,53 @@ function isElementInViewport(el) {
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
+
+tsParticles.load("tsparticles", {
+  background: {
+    color: "#0e0b16",
+  },
+  particles: {
+    number: {
+      value: 100,
+      density: {
+        enable: true,
+        value_area: 800,
+      },
+    },
+    color: {
+      value: "#ffffff",
+    },
+    shape: {
+      type: "star",
+    },
+    opacity: {
+      value: 0.8,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 1,
+        opacity_min: 0.2,
+        sync: false,
+      },
+    },
+    size: {
+      value: 2,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 5,
+        size_min: 0.1,
+        sync: false,
+      },
+    },
+    move: {
+      enable: true,
+      speed: 1,
+      direction: "none",
+      random: true,
+      straight: false,
+      outMode: "out",
+      bounce: false,
+    },
+  },
+});
