@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 #tsparticles {
@@ -459,6 +460,29 @@ iframe {
     height: 250px;
     -o-object-fit: cover;
     object-fit: cover;
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    text-align: center;
+}
+
+.view_more {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.view_more:hover {
+    color: #4c1d95;
+    text-decoration: underline;
+    transform: scale(1.1);
 }
 
 #skills {
@@ -1169,6 +1193,10 @@ footer {
 
     .project {
         width: 90%;
+    }
+
+    .view_more {
+        font-size: 1.5rem;
     }
 
     .skill {
