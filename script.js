@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   var colors = ["rgb(247, 92, 169)", "yellow", "red", "orange"];
   var currentColorIndex = 0;
+
   var typed = new Typed("#element", {
     strings: [
       "Web Developer.",
@@ -14,13 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
     startDelay: 400,
     loop: true,
     preStringTyped: function () {
-      var element = document.getElementById("element");
-      var currentColor = colors[currentColorIndex];
-      element.style.color = currentColor;
-      element.style.textShadow = `
-      0 0 5px ${currentColor}, 
-      0 0 10px rgba(255, 255, 255, 0.5),
-      0 0 10px rgba(255, 255, 255, 0.2)`;
+      document.getElementById("element").style.color =
+        colors[currentColorIndex];
       currentColorIndex = (currentColorIndex + 1) % colors.length;
     },
   });
