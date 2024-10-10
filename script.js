@@ -276,3 +276,25 @@ tsParticles.load("tsparticles", {
     },
   },
 });
+
+const animateSections = document.querySelectorAll(".animate-on-scroll");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const animationClass = entry.target.getAttribute("data-animation");
+        entry.target.style.opacity = "1";
+        entry.target.classList.add(animationClass);
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.4,
+  }
+);
+
+animateSections.forEach((section) => {
+  observer.observe(section);
+});
