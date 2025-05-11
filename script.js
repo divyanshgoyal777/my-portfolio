@@ -1,4 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
+  window.onscroll = function () {
+    let scrolled =
+      (window.scrollY / (document.body.scrollHeight - window.innerHeight)) *
+      100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
+  };
+
+  const cursor = document.querySelector(".cursor");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.display = "block";
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+  });
+
   var colors = ["rgb(247, 92, 169)", "yellow", "red", "orange"];
   var currentColorIndex = 0;
 
@@ -37,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
           top: targetPosition - offset,
           behavior: "smooth",
         });
+        history.pushState(null, null, `#${targetId}`);
         if (window.innerWidth <= 768) {
           document.getElementsByTagName("nav")[0].style.left = "-130%";
         }
@@ -58,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
           top: targetPosition - offset,
           behavior: "smooth",
         });
+        history.pushState(null, null, `#${targetId}`);
         if (window.innerWidth <= 768) {
           document.getElementsByTagName("nav")[0].style.left = "-130%";
         }
