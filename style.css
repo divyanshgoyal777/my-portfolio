@@ -283,21 +283,29 @@ nav {
     margin-top: 5px;
     background-color: #150b9b;
     width: fit-content;
-    border: none;
+    border: 2px solid #212e8d;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 8px;
-    transition-duration: 0.4s;
+    border-radius: 12px;
+    transition: 0.4s ease-in-out;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow:
+        0 0 12px rgba(62, 76, 179, 0.7),
+        0 0 25px rgba(34, 42, 107, 0.5),
+        inset 0 0 14px rgba(91, 110, 255, 0.3);
 }
 
 .download-cv:hover {
-    background-color: #281653;
+    background-color: #1d0fbf;
+    box-shadow:
+        0 0 20px rgba(59, 70, 145, 0.9),
+        0 0 40px rgba(62, 72, 141, 0.7),
+        inset 0 0 16px rgba(110, 129, 255, 0.4);
+    transform: scale(1.05);
 }
 
 #about {
