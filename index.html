@@ -871,6 +871,12 @@
                         </a>
                     </li>
                     <li>
+                        <a title="LinkedIn" href="https://www.linkedin.com/in/divyanshgoyal777/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="animation-container" id="linkedin-animation"></div>
+                        </a>
+                    </li>
+                    <li>
                         <a title="Email" href="mailto:777divyanshgoyal@gmail.com" target="_blank"
                             rel="noopener noreferrer">
                             <div class="animation-container" id="email-animation"></div>
@@ -881,7 +887,9 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Divyansh Goyal Portfolio. All Rights Reserved.</p>
+            <p>&copy;
+                <script>document.write(new Date().getFullYear())</script> Divyansh Goyal Portfolio. All Rights Reserved.
+            </p>
         </div>
     </footer>
 
@@ -900,6 +908,14 @@
             loop: true,
             autoplay: true,
             path: '.\\json\\telegram.json'
+        });
+
+        var linkedinAnimation = bodymovin.loadAnimation({
+            container: document.getElementById('linkedin-animation'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '.\\json\\linkedin.json'
         });
 
         var emailAnimation = bodymovin.loadAnimation({
